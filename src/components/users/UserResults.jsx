@@ -24,7 +24,16 @@ const UserResults = () => {
     return (
       <div className='grid grid-cols-1 gap-8 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2'>
         {users.map((user) => (
-          <h3>{user.login}</h3>
+          <div className='m2 card card-compact border-4 border-indigo-600 bg-base-100 shadow-xl items-left'>
+            <p className='text-center text-xl'>
+              {user.login}
+            </p>
+            <div className="avatar">
+              <div className="w-24 rounded-xl ml-1 mb-6">
+                <img src={user.avatar_url} />
+              </div>
+            </div>
+          </div>
         ))}
       </div>
     )
