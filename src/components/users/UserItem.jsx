@@ -1,3 +1,14 @@
+/**
+* A functional component that renders a user item with avatar, login, and a link to their profile.
+* 
+* @param {Object} props - The component's props.
+* @param {Object} props.user - The user object containing login, html_url, and avatar_url.
+* @param {string} props.user.login - The user's login name.
+* @param {string} props.user.html_url - The user's profile URL.
+* @param {string} props.user.avatar_url - The user's avatar URL.
+* 
+* @returns {JSX.Element} - The JSX element representing the user item.
+*/
 import PropTypes from 'prop-types'
 import {Link} from 'react-router-dom'
 
