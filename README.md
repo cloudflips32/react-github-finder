@@ -7,4 +7,4 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-v3.4.3-blue.svg?logo=tailwindcss)](https://tailwindcss.com/)
 [![DaisyUI](https://img.shields.io/badge/Daisy%20UI-v4.11.1-pink.svg?logo=daisyui)](https://daisyui.com/)
 
-Coming Soon
+![preview-pic](01-preview.png)
