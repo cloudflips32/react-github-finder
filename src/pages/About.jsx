@@ -1,3 +1,9 @@
+/**
+* About component displays information about the Github Finder app.
+* It includes the app name, description, version, and layout author.
+* 
+* @returns {JSX.Element} - A React component that renders the About page.
+*/
 const About = () => {
   return (
     <div>
