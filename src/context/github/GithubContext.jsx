@@ -16,20 +16,24 @@ export const GithubProvider = ({children}) => {
   /**
   * Asynchronous function that fetches user data from the GitHub API, test purposes
   */
-  const fetchUsers = async () => {
+  const searchUsers = async (text) => {
     setLoading()
 
-    const response = await fetch(`${VITE_API_URL}/users`, {
+    const params = new URLSearchParams({
+      q: text
+    })
+
+    const response = await fetch(`${VITE_API_URL}/search/users?${params}`, {
 
       headers: {
         Authorization: `token ${VITE_API_KEY}`
       },
     })
-    const data = await response.json()
+    const {items} = await response.json()
 
     dispatch({
       type: 'GET_USERS',
-      payload: data,
+      payload: items,
     }) 
   }
 
@@ -42,7 +46,7 @@ export const GithubProvider = ({children}) => {
       value={{
         users: state.users,
         loading: state.loading,
-        fetchUsers,
+        searchUsers,
       }}
     >
       {children}
