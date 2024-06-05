@@ -9,14 +9,16 @@ const VITE_API_KEY = import.meta.env.VITE_API_KEY
 export const GithubProvider = ({children}) => {
   const initialState = {
     users: [],
-    loading: true,
+    loading: false,
   }
 
   const [state,dispatch] = useReducer(GithubReducer, initialState)
   /**
-  * Asynchronous function that fetches user data from the GitHub API.
+  * Asynchronous function that fetches user data from the GitHub API, test purposes
   */
   const fetchUsers = async () => {
+    setLoading()
+
     const response = await fetch(`${VITE_API_URL}/users`, {
 
       headers: {
@@ -30,6 +32,11 @@ export const GithubProvider = ({children}) => {
       payload: data,
     }) 
   }
+
+  const setLoading = () => dispatch({
+
+  })
+
   return (
     <GithubContext.Provider
       value={{

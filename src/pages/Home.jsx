@@ -1,4 +1,5 @@
 import UserResults from "../components/users/UserResults"
+import UserSearch from "../components/users/UserSearch"
 /**
 * Home component that displays the requested users.
 * 
@@ -13,6 +14,7 @@ const Home = () => {
   return (
     <>
       <h3 className="text-center mb-10 text-bold">Requested Users:</h3>
+      <UserSearch />
       <UserResults />
     </>
   )
