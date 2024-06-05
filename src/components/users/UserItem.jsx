@@ -22,7 +22,7 @@ const UserItem = ({ user: {login, html_url, avatar_url} }) => {
           </div>
         </div>
         <div>
-          <h4 className='card-title'>{login}</h4>
+          <h4 className='card-title text-sm lg:text-lg md:text-md'>{login}</h4>
           <Link to={html_url} target='_blank' rel='noreferrer' className='text-base-content text-opacity-40'>Visit Profile</Link>
         </div>
       </div>
