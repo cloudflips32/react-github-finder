@@ -8,3 +8,9 @@
 [![DaisyUI](https://img.shields.io/badge/Daisy%20UI-v4.11.1-pink.svg?logo=daisyui)](https://daisyui.com/)
 
 ![preview-pic](01-preview.png)
+
+---
+
+06/05/2024 - Improved grid, starting Context
+
+![progress-pic](02-preview.png)
