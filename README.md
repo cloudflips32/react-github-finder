@@ -14,3 +14,11 @@
 06/05/2024 - Improved grid, starting Context
 
 ![progress-pic](02-preview.png)
+
+---
+
+06/06/2024 - Hero Page for Github Profile Page
+
+![progress-pic](03-preview.png)
+
+
