@@ -22,10 +22,11 @@ const UserItem = ({ user: {login, html_url, avatar_url} }) => {
           </div>
         </div>
         <div>
-          <h4 className='card-title text-sm lg:text-lg md:text-md'>{login}</h4>
+          <h4 className='card-title text-xs bold lg:text-lg md:text-md sm:text-xs'>   {login}
+          </h4>
           <Link to={`/user/${login}`} className='btn btn-dark btn-sm my-1'>
           More
-        </Link>
+          </Link>
         </div>
       </div>
     </div>
