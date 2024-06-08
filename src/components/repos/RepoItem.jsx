@@ -23,17 +23,17 @@ const RepoItem = ({repo}) => {
         </h3>
         <p className="mb-3">{description}</p>
         <div>
-          <div className="mr-2 badge badge-info badge-lg">
-            <FaEye className='mr-2' /> {watchers_count} Watchers
+          <div className="mr-2 badge badge-sm">
+            <FaEye className='mr-2' style={{color: 'blue'}} alt='watchers' /> {watchers_count}
           </div>
-          <div className="mr-2 badge badge-info badge-lg">
-            <FaStar className='mr-2' /> {stargazers_count} Starred
+          <div className="mr-2 badge badge-sm">
+            <FaStar className='mr-2' style={{color: 'green'}} alt='starred' /> {stargazers_count} 
           </div>
-          <div className="mr-2 badge badge-info badge-lg">
-            <FaInfo className='mr-2' /> {open_issues} Open Issues
+          <div className="mr-2 badge badge-sm">
+            <FaInfo className='mr-2' style={{color: 'red'}} alt='open issues' /> {open_issues}
           </div>
-          <div className="mr-2 badge badge-info badge-lg">
-            <FaUtensils className='mr-2' /> {forks} Forks
+          <div className="mr-2 badge badge-sm">
+            <FaUtensils className='mr-2' style={{color: 'yellow'}} alt='forks' /> {forks}
           </div>
         </div>
       </div>
