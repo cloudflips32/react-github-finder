@@ -22,7 +22,7 @@ const UserItem = ({ user: {login, html_url, avatar_url} }) => {
           </div>
         </div>
         <div>
-          <h4 className='card-title text-xs text-white lg:text-lg md:text-md sm:text-xs'>   {login}
+          <h4 className='card-title text-xs text-white lg:text-md md:text-md sm:text-xs'>   {login}
           </h4>
           <Link to={`/user/${login}`} className='btn btn-dark btn-sm my-1'>
           More

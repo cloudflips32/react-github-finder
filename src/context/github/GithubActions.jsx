@@ -1,7 +1,12 @@
-
+import axios from 'axios'
 
 const VITE_API_URL = import.meta.env.VITE_API_URL
 const VITE_API_KEY = import.meta.env.VITE_API_KEY
+
+const github = axios.create({
+  baseURL: VITE_API_URL,
+  headers: { Authorization: `token ${VITE_API_KEY}` }
+})
 
 /**
   * Asynchronous function that fetches user data from the GitHub API, test purposes
@@ -11,50 +16,16 @@ export const searchUsers = async (text) => {
   const params = new URLSearchParams({
     q: text
   })
-
-  const response = await fetch(`${VITE_API_URL}/search/users?${params}`, {
-
-    headers: {
-      Authorization: `token ${VITE_API_KEY}`
-    },
-  })
-  const {items} = await response.json()
-
-  return items
+  const response = await github.get(`/search/users?${params}`)
+  return response.data.items
 }
 
-export const getUser = async (login) => {
+export const getUserAndRepos = async (login) => {
+const [user,repos] = await Promise.all([
+  github.get(`/users/${login}`),
+  github.get(`/users/${login}/repos`)
+])
 
-  const response = await fetch(`${VITE_API_URL}/users/${login}`, {
+return { user: user.data, repos: repos.data}
 
-    headers: {
-      Authorization: `token ${VITE_API_KEY}`
-    },
-  })
-
-  if(response.status === 404) {
-    window.location = '/notfound'
-  } else {
-    const data = await response.json()
-    return data
-  }
 }
-
-export const getUserRepos = async (login) => {
-
-  const params = new URLSearchParams({
-    sort: 'created',
-    per_page: 10
-  })
-
-  const response = await fetch(`${VITE_API_URL}/users/${login}/repos?${params}`, {
-
-    headers: {
-      Authorization: `token ${VITE_API_KEY}`
-    },
-  })
-  const data = await response.json()
-
-  return data 
-}
-
