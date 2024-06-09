@@ -7,18 +7,8 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-v3.4.3-blue.svg?logo=tailwindcss)](https://tailwindcss.com/)
 [![DaisyUI](https://img.shields.io/badge/Daisy%20UI-v4.11.1-pink.svg?logo=daisyui)](https://daisyui.com/)
 
-![preview-pic](01-preview.png)
+![preview-pic](04-preview.png)
 
 ---
 
-06/05/2024 - Improved grid, starting Context
-
-![progress-pic](02-preview.png)
-
----
-
-06/06/2024 - Hero Page for Github Profile Page
-
-![progress-pic](03-preview.png)
-
-
+06/09/2024 - Project completed! Check out my app [here](https://react-github-finder-kns5n0rwb-adam-standishs-projects.vercel.app/)!
