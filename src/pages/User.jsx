@@ -6,7 +6,7 @@ import RepoList from '../components/repos/RepoList'
 import GithubContext from '../context/github/GithubContext'
 import {getUserAndRepos} from '../context/github/GithubActions'
 
-const User = ({ match }) => {
+const User = () => {
   const {user,loading,repos,dispatch} = useContext(GithubContext)
 
   const params = useParams()
