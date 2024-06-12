@@ -11,4 +11,4 @@
 
 ---
 
-06/09/2024 - Project completed! Check out my app [here](https://react-github-finder-kns5n0rwb-adam-standishs-projects.vercel.app/)!
+06/09/2024 - Project completed! Check out my app [here](https://react-github-finder-navy-six.vercel.app)!
