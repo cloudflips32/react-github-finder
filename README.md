@@ -12,3 +12,7 @@
 ---
 
 06/09/2024 - Project completed! Check out my app [here](https://react-github-finder-navy-six.vercel.app)!
+
+---
+
+07/08/2024 - App maintenance, updates. Status 200.
